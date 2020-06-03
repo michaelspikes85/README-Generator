@@ -54,46 +54,55 @@ function promptUser() {
       },
       {
         type: "input",
+        name: "questions",
+        message: "Lists questions here."
+      },
+      {
+        type: "input",
         name: "githubUsername",
         message: "What is your Github username?"
       },
   ]);
 }
 
-function generateMD(answers) {
+function generateMD(answer) {
   return `
-  # ${name.projectTitle}
+  # ${answer.projectTitle}
 
-${name.description}
+${answer.description}
 
 # Table of Contents
 
-${name.tableOfContents}
+${answer.tableOfContents}
 
 # Installing
 
-${name.installation}
+${answer.installation}
 
 # License
 
-${name.license}
+${answer.license}
 
 # Contributing
 
-${name.contributions}
+${answer.contributions}
 
 # Tests
 
-${name.tests}
+${answer.tests}
+
+# Questions
+
+${answer.questions}
 
 # Authors
 
-${name.githubUsername}`
+${answer.githubUsername}`
 };
 
 promptUser()
-  .then(function(answers) {
-    const readme = generateMD(answers);
+  .then(function(answer) {
+    const readme = generateMD(answer);
 
     return writeFileAsync("README.md", readme);
   })
