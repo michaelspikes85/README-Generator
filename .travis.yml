@@ -1,0 +1,4 @@
+language: javascript
+rvm:
+-node.js
+-inquirer
