@@ -1,4 +1,2 @@
-language: javascript
-rvm:
--node.js
--inquirer
+language: node_js
+
