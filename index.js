@@ -67,7 +67,10 @@ function promptUser() {
 
 function generateMD(answer) {
   return `
-  # ${answer.projectTitle}
+  [![Build Status](https://travis-ci.org/michaelspikes85/README-Generator.svg?branch=master)](https://travis-ci.org/michaelspikes85/README-Generator)
+
+  
+# ${answer.projectTitle}
 
 ${answer.description}
 
