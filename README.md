@@ -4,7 +4,7 @@
   
 # README Generator
 
-node.js console questionaire to build a README.md
+Simple Node.js console questions to generate a README.md
 
 # Table of Contents
 
@@ -24,7 +24,7 @@ N/A
 
 # Tests
 
-Travis CI
+N/A
 
 # Questions
 
@@ -32,4 +32,6 @@ N/A
 
 # Authors
 
-michaelspikes85
+michael.spikes85@gmail.com
+
+![User Profile Picture](https://avatars1.githubusercontent.com/u/60369601?s=460&u=880237e4bc8760b2c928cd8e3d686f2103af3b7c&v=4)

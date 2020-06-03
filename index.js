@@ -60,7 +60,12 @@ function promptUser() {
       {
         type: "input",
         name: "githubUsername",
-        message: "What is your Github username?"
+        message: "What is your Github E-mail?"
+      },
+      {
+        type: "input",
+        name: "githubImage",
+        message: "Paste a link of your github profile image?"
       },
   ]);
 }
@@ -100,7 +105,10 @@ ${answer.questions}
 
 # Authors
 
-${answer.githubUsername}`
+${answer.githubUsername}
+
+![User Profile Picture](${answer.githubImage})
+`
 };
 
 promptUser()
